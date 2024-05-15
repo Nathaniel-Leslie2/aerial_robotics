@@ -71,7 +71,7 @@ catkin config -DCMAKE_BUILD_TYPE=Release
 catkin build
 
 cd $HOME/aerial_robotics_ws/src
-git clone --recursive -b master https://github.com/robowork/aerial_robotics
+git clone --recursive -b master https://github.com/Nathaniel-Leslie2/aerial_robotics
 
 cd $HOME/aerial_robotics_ws && git clone --recursive https://github.com/ArduPilot/ardupilot && cd ardupilot
 git checkout Plane-4.2
