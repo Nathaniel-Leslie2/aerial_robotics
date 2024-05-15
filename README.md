@@ -1,4 +1,10 @@
-# aerial_robotics
+# Aerial Robotics
+```
+Guidance: Dr. Papacrhistos
+Student: Nathaniel Leslie-Rivas
+Class: CS 491
+Purpose: Final project - Drone Flight Simulation
+```
 
 ## Install requirements
 ```
