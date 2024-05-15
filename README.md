@@ -5,7 +5,33 @@ Student: Nathaniel Leslie-Rivas
 Class: CS 491
 Purpose: Final project - Drone Flight Simulation
 ```
+## ROS-Melodic Installation
+```
+OS: Linux Ubuntu 16.04
 
+Step 1:
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+
+Step 2:
+sudo apt install curl # if you haven't already installed curl
+
+Step 3: Setup Keys
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+
+Step 4: Installation
+sudo apt update
+sudo apt install ros-melodic-desktop-full
+
+Step 5: Environment Setup
+echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+
+Step 6: Install Dependencies
+sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+sudo apt install python-rosdep
+sudo rosdep init
+rosdep update
+```
 ## Install requirements
 ```
 sudo apt-get install \
