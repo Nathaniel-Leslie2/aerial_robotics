@@ -148,11 +148,6 @@ wp load ../src/aerial_robotics/robowork_minihawk_gazebo/resources/waypoints.txt
 [Launch ROS node in new terminal 1]:
 ROS_NAMESPACE="minihawk_SIM" roslaunch robowork_minihawk_launch vehicle1_apm_SIM.launch
 
-[Invoke ROS services in new terminal 2]:
-rosservice call /minihawk_SIM/mavros/set_mode "custom_mode: 'GUIDED'"
-rosservice call /minihawk_SIM/mavros/cmd/arming True
-rosservice call /minihawk_SIM/mavros/cmd/takeoff "{min_pitch: 0.0, yaw: 0.0, latitude: 0.0, longitude: 0.0, altitude: 10.0}"
-
 [Alternatively, invoke ROS services in new terminal 2 to run auto (waypoint) mission]:
 rosservice call /minihawk_SIM/mavros/set_mode "custom_mode: 'AUTO'"
 rosservice call /minihawk_SIM/mavros/cmd/arming True   ###Required if the mission hasn't started yet### 
