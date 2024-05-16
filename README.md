@@ -150,7 +150,7 @@ ROS_NAMESPACE="minihawk_SIM" roslaunch robowork_minihawk_launch vehicle1_apm_SIM
 
 [Alternatively, invoke ROS services in new terminal 2 to run auto (waypoint) mission]:
 rosservice call /minihawk_SIM/mavros/set_mode "custom_mode: 'AUTO'"
-rosservice call /minihawk_SIM/mavros/cmd/arming True   ###Required if the mission hasn't started yet### 
+rosservice call /minihawk_SIM/mavros/cmd/arming True 
 
 ### Once the vehicle reaches its final waypoint (over the building) the camera will be looking at an apriltag marker  ###
 
