@@ -49,7 +49,8 @@ python-pip
 
 pip install \
 mavproxy==1.8.49 \
-monotonic
+monotonic \
+apriltag
 
 # [MAVProxy Version: Verify you have mavproxy version 1.8.49 installed]
 pip show mavproxy
