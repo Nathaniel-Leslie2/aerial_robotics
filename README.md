@@ -157,13 +157,13 @@ rosservice call /minihawk_SIM/mavros/cmd/arming True
 [Observe ROS topic output of apriltag_ros node in new terminal 3 (relative pose in camera frame coordinates with respect to detected apriltag marker)]:
 rostopic echo /minihawk_SIM/MH_usb_camera_link_optical/tag_detections
 
-### Lands the drone (remove) ###
+### Lands the drone ###
+[Invoke ROS service in terminal 2]:
+rosservice call /minihawk_SIM/mavros/set_mode "custom_mode: 'QLOITER'"
 
 [Observe ROS topic publish node in new terminal 4]:
 rostopic pub -r 10 /minihawk_SIM/mavros/rc/override mavros_msgs/OverrideRCIn 'channels: [1500, 1500, 1500, 1500, 1800, 1000, 1000, 1800, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]'
 
 [Invoke ROS service in terminal 2]:
-rosservice call /minihawk_SIM/mavros/set_mode "custom_mode: 'QLOITER'"
 rosservice call /minihawk_SIM/mavros/set_mode "custom_mode: 'QLAND'"
-
 ```
