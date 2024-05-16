@@ -7,7 +7,7 @@ Purpose: Final project - Drone Flight Simulation
 ```
 ## ROS-Melodic Installation
 ```
-OS: Linux Ubuntu 16.04
+OS: Linux Ubuntu 18.04 (Bionic Beaver)
 
 Step 1:
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
