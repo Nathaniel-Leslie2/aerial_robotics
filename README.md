@@ -158,7 +158,7 @@ rosservice call /minihawk_SIM/mavros/cmd/arming True   ###Required if the missio
 rostopic echo /minihawk_SIM/MH_usb_camera_link_optical/tag_detections
 
 [Observe ROS topic publish node in new terminal 4]:
-rostopic pub -r 10 /minihawk_SIM/mavros/rc/override mavros_msgs/OverrideRCIn "channels: [1500, 1500, 1500, 1500, 1800, 1000, 1000, 1800, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+rostopic pub -r 10 /minihawk_SIM/mavros/rc/override mavros_msgs/OverrideRCIn 'channels: [1500, 1500, 1500, 1500, 1800, 1000, 1000, 1800, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]'
 
 ### Lands the drone (remove) ###
 [Invoke ROS service in terminal 2]:
