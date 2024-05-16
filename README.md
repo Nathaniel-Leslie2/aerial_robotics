@@ -160,14 +160,10 @@ rostopic echo /minihawk_SIM/MH_usb_camera_link_optical/tag_detections
 ### Try switching between some Quadplane modes and control the aircraft motion ###
 
 # https://ardupilot.org/plane/docs/qloiter-mode.html#qloiter-mode
-[Publish ROS topic in new terminal 3 (this is required to virtually center the rc sticks, 4 first channels are 0:roll(-left,+right), 1:pitch(-up,+down), 2:throttle(-down,+up), 3:yaw(-left,+right))]:
-rostopic pub -r 10 /minihawk_SIM/mavros/rc/override  mavros_msgs/OverrideRCIn "channels: [1500, 1500, 1500, 1500, 1800, 1000, 1000, 1800, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
 [Invoke ROS service in terminal 2]:
 rosservice call /minihawk_SIM/mavros/set_mode "custom_mode: 'QLOITER'"
 
 # https://ardupilot.org/plane/docs/qhover-mode.html
-[Publish ROS topic in new terminal 3 (this is required to virtually trim the rc sticks)]:
-rostopic pub -r 10 /minihawk_SIM/mavros/override  mavros_msgs/OverrideRCIn "channels: [1464, 1598, 1466, 1500, 1800, 1000, 1000, 1800, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
 [Invoke ROS service in terminal 2]:
 rosservice call /minihawk_SIM/mavros/set_mode "custom_mode: 'QHOVER'"
 
