@@ -127,7 +127,7 @@ cd $HOME/aerial_robotics_ws
 catkin build
 ```
 
-## Simulation
+## Simulation to Replicate Results
 ```
 [Launch ROS Gazebo SIM in new terminal]:
 roslaunch robowork_minihawk_gazebo minihawk_playpen.launch
