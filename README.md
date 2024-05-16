@@ -160,14 +160,7 @@ rostopic echo /minihawk_SIM/MH_usb_camera_link_optical/tag_detections
 ### Try switching between some Quadplane modes and control the aircraft motion ###
 
 # https://ardupilot.org/plane/docs/qloiter-mode.html#qloiter-mode
+# Lands the drone
 [Invoke ROS service in terminal 2]:
 rosservice call /minihawk_SIM/mavros/set_mode "custom_mode: 'QLOITER'"
-
-# https://ardupilot.org/plane/docs/qhover-mode.html
-[Invoke ROS service in terminal 2]:
-rosservice call /minihawk_SIM/mavros/set_mode "custom_mode: 'QHOVER'"
-
-# https://ardupilot.org/plane/docs/qland-mode.html
-[Invoke ROS service in terminal 2]:
-rosservice call /minihawk_SIM/mavros/set_mode "custom_mode: 'QLAND'"
 ```
