@@ -159,4 +159,6 @@ rosservice call /minihawk_SIM/mavros/cmd/arming True
 [Invoke Python Script in terminal 2 (after drone is waiting above fiducial marker)]:
 cd $HOME/aerial_robotics_ws/src/aerial_robotics/script/
 python move.py
+
+pip install apriltag #if tag error
 ```
